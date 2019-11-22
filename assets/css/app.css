@@ -1,0 +1,129 @@
+/* Imports */
+
+@import url('./variables.css');
+@import url('./flexbase.css');
+@import url('./buttons.css');
+@import url('./inputs.css');
+@import url('./labels.css');
+@import url('./modal.css');
+@import url('./navigation.css');
+@import url('./header.css');
+@import url('./slider.css');
+
+/* Global Stryles */
+
+html, body {}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: var(--rl-background);
+}
+
+body::-webkit-scrollbar-button {
+    color: var(--rl-white-hover);
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--rl-primary-dark);
+    border-radius: 5px;
+}
+
+body {
+    font-family: var(--rl-font-family);
+    position: relative;
+}
+
+nav, header, body, div, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Content Styles */
+
+.content {
+    background-color: var(--rl-background);
+}
+
+.content .content-container {
+    padding-bottom: 50px;
+}
+
+.panels-container {}
+
+.panels-container .panel {
+    background-color: var(--rl-white);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    flex-basis: 300px;
+}
+
+.panel .thumbnail {
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: var(--rl-primary-transition);
+}
+
+.panel .panel-label {
+    margin: 0px 12px 3px;
+    font-weight: 500;
+}
+
+.panel .panel-label.category {
+    margin: 3px 12px;
+    font-size: 14px;
+}
+
+.panel .panel-rating {
+    display: flex;
+    margin: 0px 12px;
+}
+
+.panel .panel-rating .star {
+    background-image: url('../icons/star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 25px;
+}
+
+.panel .description {
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+
+/* Responsive Ipad*/
+
+@media(max-width: 1024px) {
+    .panels-container .row {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Responsive Mobile*/
+
+@media(max-width: 414px) {
+    body::-webkit-scrollbar {
+        width: 0px;
+        background: unset;
+    }
+    .panel .thumbnail {
+        width: 50px;
+    }
+    .panels-container .filled-button {
+        padding: 10px;
+        font-size: 12px;
+        transition: var(--rl-primary-transition);
+    }
+    .panels-container .filled-button .icon {
+        padding: 5px;
+    }
+}

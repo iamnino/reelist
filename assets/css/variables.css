@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+:root {
+    /* Color Palletes */
+    --rl-secondary: #190A27;
+    --rl-primary: #612694;
+    --rl-primary-light: #541b86;
+    --rl-primary-dark: #4c1b75;
+    --rl-hover-primary: #61269445;
+    --rl-background: #EAECEF;
+    --rl-white: #FFF;
+    --rl-opaque-white: #eaecefc2;
+    --rl-white-hover: #eaecef4d;
+    --rl-backdrop: #2f124961;
+    /* Font Family */
+    --rl-font-family: 'Roboto', sans-serif;
+    /* Transition */
+    --rl-primary-transition: 0.3s;
+}

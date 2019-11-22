@@ -1,0 +1,35 @@
+.page-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px 5px;
+    display: flex;
+    align-items: center;
+    transition: var(--rl-primary-transition);
+}
+
+.page-header::before {
+    content: '';
+    width: 5px;
+    height: 20px;
+    background-color: var(--rl-primary);
+    position: absolute;
+    left: 0px;
+}
+
+
+/* Responsive Ipad*/
+
+@media(max-width: 1024px) {
+    .page-header {
+        margin: 10px 0px;
+    }
+}
+
+
+/* Responsive Mobile*/
+
+@media(max-width: 414px) {
+    .page-header {
+        font-size: 16px;
+    }
+}

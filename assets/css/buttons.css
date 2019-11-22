@@ -1,0 +1,130 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.toggle-button {
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.toggle-button:hover {
+    background-color: var(--rl-hover-primary);
+}
+
+.toggle-button:active {
+    background-color: var(--rl-primary);
+}
+
+.toggle-button img {
+    width: 25px;
+}
+
+.filled-button {
+    transition: 0.3s;
+    font-size: 14px;
+    background-color: var(--rl-primary);
+    border: 2px solid var(--rl-primary);
+    color: var(--rl-white);
+    padding: 12px 15px;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.lined-button {
+    transition: 0.3s;
+    font-size: 16px;
+    color: var(--rl-white);
+    border: 2px solid var(--rl-primary);
+    padding: 12px 15px;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.lined-button:hover {
+    background-color: var(--rl-hover-primary);
+}
+
+.lined-button:active {
+    background-color: var(--rl-primary);
+}
+
+.ellipsis-button {
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    background-image: url('../icons/elipsis.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.ellipsis-button:hover {
+    background-color: var(--rl-white-hover)
+}
+
+
+/* Icon Related */
+
+.reelist-scratch {
+    transition: 0.4s;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reelist-scratch:hover {
+    background-image: url('../icons/light-scrath.svg');
+}
+
+.button-menu {
+    flex-basis: 250px;
+}
+
+.button-menu .button-icon {
+    transition: 0.3s;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.button-menu .button-icon:hover {
+    background-color: var(--rl-white-hover);
+}
+
+.button-icon-label {
+    font-size: 14px;
+}
+
+.button-icon {}
+
+.button-icon .icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.plus-icon {
+    padding: 5px;
+    background-size: 80%;
+    background-image: url('../icons/plus.svg');
+}
+
+.comment-icon {
+    background-size: 80%;
+    background-image: url('../icons/msgbox.svg');
+}
+
+.upvote-icon {
+    background-size: 80%;
+    background-image: url('../icons/up.svg');
+}
+
+.downvote-icon {
+    background-size: 80%;
+    background-image: url('../icons/down.svg');
+}
